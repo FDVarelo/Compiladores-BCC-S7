@@ -1,0 +1,45 @@
+comecar
+
+// comentario
+
+inteiro @int = 15                   // verificar int
+imprimir(@int)
+
+
+flutuante @float = 15.7             // verificar float
+imprimir(@float)
+
+
+mensagem("Digite uma string: ")     // verificar leitura + string
+estringue @string = 0
+ler_est(@string)                    // ler_est() le apenas string, para ler int ou float é apenas ler()
+mensagem("string: ")
+imprimir_est(@string)               //imprimir_est() imprime uma string
+fim_linha()
+
+
+flutuante @nota = 0                 // verificar condições
+flutuante @freq = 0
+flutuante @verificar = 0
+mensagem("Digite a nota e frequencia nessa ordem: ")
+ler(@nota)
+ler(@freq)
+se(@nota < 7){
+    mensagem("Reprovado")
+}se_nao{
+    se(@freq>=75){
+        mensagem("Aprovado")
+    }se_nao{
+        mensagem("Reprovado")
+    }
+}
+fim_linha()
+
+
+inteiro @condicao = 0               // estrutura de repetição
+enquanto(@condicao < 5){
+    imprimir(@condicao)
+    @condicao = @condicao + 1
+}
+
+acabar

@@ -1,0 +1,59 @@
+comecar
+
+// problema de media do ifce onde temos a n1 e a n2
+// temos a média da n1 e n2, que na média final elas valem x2 e x3 respectivamente
+// a media final que é a soma da n1*2 e n2*3 dividido por 5
+// e se a media final for acima de 7 o aluno é aprovado
+
+flutuante @n1 = 0
+flutuante @n11 = 0
+flutuante @n2 = 0
+flutuante @n21 = 0
+inteiro @qdd1 = 0
+inteiro @qdd2 = 0
+inteiro @aux = 0
+
+mensagem("Quantas notas tem na n1?: ")
+ler(@qdd1)
+mensagem("Digite a(s) nota(s) da n1: ")
+enquanto(@qdd1 > @aux){
+    ler(@n1)
+    @n11 = @n11 + @n1
+    @aux = @aux + 1
+}
+
+@aux = 0
+
+mensagem("Quantas notas tem na n2?: ")
+ler(@qdd2)
+mensagem("Digite a(s) nota(s) da n2: ")
+enquanto(@qdd2 > @aux){
+    ler(@n2)
+    @n21 = @n21 + @n2
+    @aux = @aux + 1
+}
+fim_linha()
+
+mensagem("Media n1: ")
+@media1 = @n11/@qdd1
+imprimir(@media1)
+
+mensagem("Media n2: ")
+@media2 = @n21/@qdd2
+imprimir(@media2)
+fim_linha()
+
+mensagem("Com relacao a media final: ")
+@newmedia1 = (@media1 * 2)
+@newmedia2 = (@media2 * 3)
+@mediafinal =(@newmedia1 + @newmedia2)/5
+se (@mediafinal >= 7) {
+    mensagem("Aluno APROVADO com media: ")
+    imprimir(@mediafinal)
+}se_nao{
+    mensagem("Aluno REPROVADO com media: ")
+    imprimir(@mediafinal)
+}
+fim_linha()
+
+acabar

@@ -1,0 +1,22 @@
+comecar
+
+flutuante @a = 0
+flutuante @b = 0
+flutuante @c = 0
+
+mensagem("Sua primeira nota: ") // comentário
+ler(@a)
+mensagem("Sua Segunda nota: ")
+ler(@b)
+@c = (@a + @b)/2
+mensagem("Sua média: ")
+imprimir(@c)
+
+se (@c > 7) {
+    mensagem("Aprovado")
+}se_nao{
+    mensagem("Reprovado")
+}
+fim_linha()
+
+acabar
